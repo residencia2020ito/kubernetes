@@ -14,7 +14,7 @@ spec:
       labels:
         app: config-server-deploy
     spec:
-      dnsPolicy: ClusterFirst
+      dnsPolicy: Default
       restartPolicy: Always
       containers:
         - env:
