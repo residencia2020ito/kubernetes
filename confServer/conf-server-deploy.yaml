@@ -22,8 +22,8 @@ spec:
             value: https://github.com/residencia2020ito/config
           - name: SPRING_CLOUD_CONFIG_SERVER_GIT_SKIPSSLVALIDATION
             value: 'true'
-          name: config-server
-          image: hyness/spring-cloud-config-server
-          ports:
+        name: config-server
+        image: hyness/spring-cloud-config-server
+        ports:
           - containerPort: 8888
             protocol: TCP
