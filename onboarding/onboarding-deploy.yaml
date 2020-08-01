@@ -14,6 +14,8 @@ spec:
       labels:
         app: onboarding-deploy
     spec:
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
       containers:
         - name: onboarding
           image: residencia2020/onboarding:v1.0.0
