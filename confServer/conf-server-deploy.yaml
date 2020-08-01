@@ -14,12 +14,20 @@ spec:
       labels:
         app: config-server-deploy
     spec:
-      dnsPolicy: Default
+       dnsPolicy: "None"
+         dnsConfig:
+           nameservers:
+             - 1.2.3.4
+    searches:
+      - ns1.svc.cluster-domain.example
+      - my.dns.search.suffix
       restartPolicy: Always
       containers:
         - env:
           - name: SPRING_CLOUD_CONFIG_SERVER_GIT_URI
             value: https://github.com/residencia2020ito/config
+          - name: SPRING_CLOUD_CONFIG_SERVER_GIT_SKIPSSLVALIDATION
+            value: 'true'
           name: config-server
           image: hyness/spring-cloud-config-server
           ports:
