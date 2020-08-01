@@ -10,4 +10,4 @@ spec:
     port: 8080
     targetPort: 8888
   selector:
-    app: conf-server-deploy
+    app: config-server-deploy
