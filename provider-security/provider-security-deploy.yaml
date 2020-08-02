@@ -27,7 +27,7 @@ spec:
               value: '8080'
             - name: SPRING_CLOUD_CONFIG_FAILT_FAST
               value: 'true'
-	    - name: SPRING_PROFILES_ACTIVE
+            - name: SPRING_PROFILES_ACTIVE
               value: 'pro' 
             - name: SPRING_CLOUD_CONFIG_LABEL
               value: 'master'
