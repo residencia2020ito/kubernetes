@@ -14,6 +14,8 @@ spec:
       labels:
         app: provider-security-deploy
     spec:
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
       containers:
         - name: provider-security
           image: residencia2020/provider-security:v1.0.0
@@ -27,4 +29,5 @@ spec:
               value: 'true'
             - name: SPRING_PROFILES_ACTIVE
               value: 'pro'
-		  
+	    - name: SPRING_CLOUD_CONFIG_LABEL
+              value: 'master'  
