@@ -28,6 +28,6 @@ spec:
             - name: SPRING_CLOUD_CONFIG_FAILT_FAST
               value: 'true'
 	    - name: SPRING_PROFILES_ACTIVE
-              value: 'pro'
-	    - name: SPRING_CLOUD_CONFIG_LABEL
-              value: 'master'  
+              value: 'pro' 
+            - name: SPRING_CLOUD_CONFIG_LABEL
+              value: 'master'
