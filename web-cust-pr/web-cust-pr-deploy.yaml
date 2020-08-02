@@ -14,6 +14,8 @@ spec:
       labels:
         app: web-cust-pr-deploy
     spec:
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
       containers:
         - name: web-cust-pr
           image: residencia2020/web-cust-pr:v1.0.0
