@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb-deploy
+  labels:
+    app: mongodb-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongodb-deploy
+  template:
+    metadata:
+      labels:
+        app: mongodb-deploy
+    spec:
+      containers:
+      - name: mongodb
+        image: mongo
+        ports:
+        - containerPort: 27017
+        protocol: TCP
+        env:
+        - name: MONGO_INITDB_ROOT_USERNAME 
+          value: yoconsumo
+        - name: MONGO_INITDB_ROOT_PASSWORD
+          value: password
+        - name: MONGO_INITDB_ROOT_DATABASE
+          value: yoconsumodb
+        volumeMountsClaim:
+        - name: mongodb-volume
+          mountPath: /data/db
+          
