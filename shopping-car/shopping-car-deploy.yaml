@@ -14,6 +14,8 @@ spec:
       labels:
         app: shopping-car-deploy
     spec:
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
       containers:
         - name: shopping-car
           image: residencia2020/shopping-car:v1.0.0
@@ -27,3 +29,5 @@ spec:
               value: 'true'
             - name: SPRING_PROFILES_ACTIVE
               value: 'pro'
+            - name: SPRING_CLOUD_CONFIG_LABEL
+              value: 'master'
