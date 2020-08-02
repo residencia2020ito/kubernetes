@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-cust-pr-deploy
+  labels:
+    app: web-cust-pr-deploy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: web-cust-pr-deploy
+  template:
+    metadata:
+      labels:
+        app: web-cust-pr-deploy
+    spec:
+      containers:
+        - name: web-cust-pr
+          image: residencia2020/web-cust-pr:v1.0.0
+          ports:
+            - containerPort: 80
+              protocol: TCP	  
