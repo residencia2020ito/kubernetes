@@ -16,7 +16,7 @@
     "selector": {
       "app": "web-cust-pr-deploy"
     },
-    "type": "LoadBalancer"
+    "type": "NodePort"
   },
   "status": {
     "loadBalancer": {
