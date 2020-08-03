@@ -22,7 +22,7 @@
     "loadBalancer": {
       "ingress": [
         {
-          "hostname": "https://yoconsumoadmin.municipiodeoaxaca.gob.mx"
+          "hostname": "yoconsumo.municipiodeoaxaca.gob.mx"
         }
       ]
     }
