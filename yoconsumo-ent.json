@@ -2,7 +2,7 @@
   "kind": "Service",
   "apiVersion": "v1",
   "metadata": {
-    "name": "yoconsumo-ent",
+    "name": "yoconsumo-ent-oax",
     "namespace": "default"
   },
   "spec": {
