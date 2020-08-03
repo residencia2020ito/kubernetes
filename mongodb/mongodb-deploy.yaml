@@ -31,6 +31,6 @@ spec:
           value: password
         - name: MONGO_INITDB_ROOT_DATABASE
           value: yoconsumodb
-        volumeMountsClaim:
-        - name: mongodb-volume-storage
-          mountPath: "/data/db"
+        volumeMounts:
+          - name: mongodb-volume-storage
+            mountPath: "/data/db"
