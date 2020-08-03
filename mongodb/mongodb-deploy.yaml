@@ -14,7 +14,10 @@ spec:
       labels:
         app: mongodb-deploy
     spec:
-    
+      volumes:
+        - name: mongodb-pv-storage
+          persistentVolumeClaim:
+            claimName: mongodb-volume-claim
       containers:
       - name: mongodb
         image: mongo
@@ -29,5 +32,5 @@ spec:
         - name: MONGO_INITDB_ROOT_DATABASE
           value: yoconsumodb
         volumeMountsClaim:
-        - name: mongodb-volume
+        - name: mongodb-volume-storage
           mountPath: "/data/db"
