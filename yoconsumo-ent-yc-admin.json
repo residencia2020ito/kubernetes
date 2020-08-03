@@ -9,7 +9,7 @@
     "ports": [
       {
         "protocol": "TCP",
-        "port": 8889,
+        "port": 80,
         "targetPort": 80
       }
     ],
