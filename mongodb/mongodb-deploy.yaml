@@ -14,6 +14,7 @@ spec:
       labels:
         app: mongodb-deploy
     spec:
+    
       containers:
       - name: mongodb
         image: mongo
