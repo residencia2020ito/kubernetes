@@ -18,7 +18,7 @@ spec:
       restartPolicy: Always
       containers:
         - name: onboarding
-          image: residencia2020/onboarding:v1.0.0
+          image: residencia2020/onboarding-pr:v1.0.0
           ports:
             - containerPort: 8080
               protocol: TCP
