@@ -29,4 +29,4 @@ spec:
           value: yoconsumodb
         volumeMountsClaim:
         - name: mongodb-volume
-          mountPath: /data/db
+          mountPath: "/data/db"
