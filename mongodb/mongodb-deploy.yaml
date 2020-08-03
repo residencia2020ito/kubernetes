@@ -25,8 +25,8 @@ spec:
             - containerPort: 27017
               protocol: TCP
           volumeMounts:
-            - name: mongodb-volume-storage
-              mountPath: "/data/db"
+            - mountPath: "/data/db"
+              name: mongodb-pv-storage   
           env:
           - name: MONGO_INITDB_ROOT_USERNAME 
             value: yoconsumo
