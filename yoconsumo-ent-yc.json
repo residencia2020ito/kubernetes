@@ -10,22 +10,12 @@
       {
         "protocol": "TCP",
         "port": 80,
-        "targetPort": 80,
-        "nodePort": 30007
+        "targetPort": 80
       }
     ],
     "selector": {
       "app": "web-cust-pr-deploy"
     },
-    "type": "NodePort"
-  },
-  "status": {
-    "loadBalancer": {
-      "ingress": [
-        {
-          "hostname": "yoconsumo.municipiodeoaxaca.gob.mx"
-        }
-      ]
-    }
+    "type": "ClusterIP"
   }
 }
