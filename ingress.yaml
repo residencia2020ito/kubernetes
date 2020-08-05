@@ -10,5 +10,5 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: yoconsumo-ent-yc
+          serviceName: web-cust-pr-service
           servicePort: 80
