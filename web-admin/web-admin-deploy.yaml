@@ -18,7 +18,7 @@ spec:
       restartPolicy: Always
       containers:
         - name: web-admin
-          image: residencia2020/web-admin:v1.0.0
+          image: residencia2020/web-admin-yc:v1.0.0
           ports:
             - containerPort: 80
               protocol: TCP
