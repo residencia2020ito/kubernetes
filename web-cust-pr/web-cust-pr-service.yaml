@@ -4,7 +4,7 @@ metadata:
   name: web-cust-pr-service
   namespace: default
   labels:
-    run: yoconsumo-ent-yc
+    run: web-cust-pr-service
 spec:
   type: NodePort
   ports:
