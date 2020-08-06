@@ -1,0 +1,33 @@
+  
+{
+  "kind": "Service",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "yoconsumo-ent-cust-pr-yc",
+    "namespace": "default"
+  },
+  "spec": {
+    "ports": [
+      {
+        "protocol": "TCP",
+        "port": 80,
+        "targetPort": 80,
+        "nodePort": 30009
+      }
+    ],
+    "selector": {
+      "app": "web-cust-pr-deploy"
+    },
+    "type": "NodePort"
+  }
+},
+  "status": {
+    "loadBalancer": {
+      "ingress": [
+        {
+          "hostname": "yoconsumo.municipiodeoaxaca.gob.mx"
+        }
+      ]
+    }
+  }
+}
