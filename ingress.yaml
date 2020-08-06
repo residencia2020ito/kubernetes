@@ -11,4 +11,4 @@ spec:
       paths:
       - backend:
           serviceName: web-cust-pr-service
-          servicePort: 31086
+          servicePort: port-cust-pr
