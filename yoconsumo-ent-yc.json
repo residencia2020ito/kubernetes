@@ -17,6 +17,6 @@
     "selector": {
       "app": "web-cust-pr-deploy"
     },
-    "type": "ClusterIP"
+    "type": "NodePort"
   }
 }
