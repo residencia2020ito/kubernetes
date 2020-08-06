@@ -6,7 +6,7 @@ metadata:
   labels:
     run: web-cust-pr-service
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
   - name: port-cust-pr
     port: 80
