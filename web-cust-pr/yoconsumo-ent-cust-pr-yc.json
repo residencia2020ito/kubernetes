@@ -18,8 +18,7 @@
       "app": "web-cust-pr-deploy"
     },
     "type": "NodePort"
-  }
-},
+  },
   "status": {
     "loadBalancer": {
       "ingress": [
