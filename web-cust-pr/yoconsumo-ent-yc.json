@@ -20,4 +20,14 @@
     },
     "type": "NodePort"
   }
+},
+  "status": {
+    "loadBalancer": {
+      "ingress": [
+        {
+          "hostname": "yoconsumo.municipiodeoaxaca.gob.mx"
+        }
+      ]
+    }
+  }
 }
