@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: provider-security-deploy
+  labels:
+    app: provider-security-deploy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: provider-security-deploy
+  template:
+    metadata:
+      labels:
+        app: provider-security-deploy
+    spec:
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      containers:
+        - name: provider-security
+          image: residencia2020/providersecurity-yc:v1.0.0
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+          env:
+            - name: SERVER_PORT
+              value: '8080'
+            - name: SPRING_CLOUD_CONFIG_FAILT_FAST
+              value: 'true'
+            - name: SPRING_PROFILES_ACTIVE
+              value: 'pro' 
+            - name: SPRING_CLOUD_CONFIG_LABEL
+              value: 'master'
