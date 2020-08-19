@@ -19,7 +19,7 @@ spec:
       restartPolicy: Always
       containers:
         - name: shopping-car
-          image: residencia2020/shoppingcar:v1.1.4
+          image: residencia2020/shoppingcar:v1.1.5
           ports:
             - containerPort: 8080
               protocol: TCP
