@@ -18,7 +18,7 @@ spec:
       restartPolicy: Always
       containers:
         - name: web-cust-pr
-          image: residencia2020/webcustpr-yc:v1.0.7
+          image: residencia2020/webcustpr-yc:v1.0.8
           ports:
             - containerPort: 80
               protocol: TCP
